@@ -1,4 +1,4 @@
-#' rfm_load fucntion
+#' rfm_model fucntion
 #'
 #' Load data in to create model
 #'
