@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' rfm_load fucntion\n#'\n#' Load data in to create model\n#'\n#' @param file Path of the file that need to\n#' @return a Data.frame object\n#'\n#'\n#' @export\n\n\nrfm_load <- function(file){\n\n  # load data data in csv\n\n  rfm_data <- read.csv(file = file, header = T, sep = ',')\n  print('Data have been loaded')\n\n  return(rfm_data)\n\n}\n",
+    "created" : 1484149361246.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2043333274",
+    "id" : "5921E357",
+    "lastKnownWriteTime" : 1484150155,
+    "last_content_update" : 1484150155685,
+    "path" : "~/code_repo/rfm/R/rfm_load.R",
+    "project_path" : "R/rfm_load.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
