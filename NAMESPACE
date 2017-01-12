@@ -3,3 +3,4 @@
 export(rfm)
 export(rfm_load)
 export(rfm_model)
+export(rfm_plot)
