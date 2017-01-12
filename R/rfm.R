@@ -45,35 +45,35 @@ rfm <- function(df,
   #build quantile------------------------------------------------------------------
 
   if (n_freq == 2){
-    f <- quantile(df$frequency, c(0.5))
+    f <- quantile(df$frequency, c(0.9))
   } else if (n_freq == 3){
-    f <- quantile(df$frequency, c(0.33,0.66,1))
+    f <- quantile(df$frequency, c(0.90,0.99,1))
   } else if (n_freq == 4){
-    f <- quantile(df$frequency, c(0.25,0.5,0.75,1))
+    f <- quantile(df$frequency, c(0.5,0.9,0.99,1))
   } else if (n_freq == 5){
-    f<- quantile(df$frequency, c(0.2,0.4,0.6,0.8,1))
+    f<- quantile(df$frequency, c(0.3,0.6,0.9,0.99,1))
   }
 
 
   if (n_rec == 2){
-    r <- quantile(df$recency, c(0.5))
+    r <- quantile(df$recency, c(0.9))
   } else if (n_rec == 3){
-    r <- quantile(df$recency, c(0.33,0.66,1))
+    r <- quantile(df$recency, c(0.90,0.99,1))
   } else if (n_rec == 4){
-    r <- quantile(df$recency, c(0.25,0.5,0.75,1))
+    r <- quantile(df$recency,  c(0.5,0.9,0.99,1))
   } else if (n_rec == 5){
-    r<- quantile(df$recency, c(0.2,0.4,0.6,0.8,1))
+    r<- quantile(df$recency, c(0.3,0.6,0.9,0.99,1))
   }
 
 
   if (n_mon == 2){
-    m <- quantile(df$monetary, c(0.5))
+    m <- quantile(df$monetary, c(0.9))
   } else if (n_mon == 3){
-    m <- quantile(df$monetary, c(0.33,0.66,1))
+    m <- quantile(df$monetary, c(0.90,0.99,1))
   } else if (n_mon == 4){
-    m <- quantile(df$monetary, c(0.25,0.5,0.75,1))
+    m <- quantile(df$monetary, c(0.5,0.9,0.99,1))
   } else if (n_mon == 5){
-    m<- quantile(df$monetary, c(0.2,0.4,0.6,0.8,1))
+    m<- quantile(df$monetary, c(0.3,0.6,0.9,0.99,1))
   }
 
 
