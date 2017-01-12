@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "\n\nrfm_data <- read.csv('//wdmpsvr01/RedirectedFolders/clemence.burnichon/My Documents/code_repo/rfm/cust.csv', header = T , sep = ',')\n\nmodel <- rfm(rfm_data, n_freq = 3, n_rec = 2, n_mon = 4 , score = T)\n\nmodel\n",
+    "contents" : "\n\nrfm_data <- read.csv('//wdmpsvr01/RedirectedFolders/clemence.burnichon/My Documents/code_repo/rfm/cust.csv', header = T , sep = ',')\n\nmodel <- rfm(rfm_data, n_freq = 3, n_rec = 2, n_mon = 4 , score = T)\n\nmodel\n\n\nlibrary(highcharter)\n\nd <- rfm_load('cust.csv')\nis.recursive(d)\n",
     "created" : 1484215280297.000,
     "dirty" : true,
     "encoding" : "",
     "folds" : "",
-    "hash" : "2945759177",
+    "hash" : "2005587986",
     "id" : "A537A8FF",
     "lastKnownWriteTime" : 30962681237012581,
-    "last_content_update" : 1484215812698,
+    "last_content_update" : 1484216961493,
     "path" : null,
     "project_path" : null,
     "properties" : {

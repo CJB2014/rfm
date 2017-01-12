@@ -14,7 +14,6 @@ rfm_load <- function(file){
   # load data data in csv
 
   rfm_data <- read.csv(file = file, header = T, sep = ',')
-  print('Data have been loaded')
 
   return(rfm_data)
 
