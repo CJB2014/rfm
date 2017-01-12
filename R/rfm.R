@@ -105,25 +105,25 @@ rfm <- function(df,
 ##recency
   if (n_rec == 2){
 
-    df$Re <- ifelse(df$recency<r[1],2,1)
+    df$Re <- ifelse(df$recency<r[1],1,2)
 
 
   } else  if (n_rec == 3){
 
-    df$Re <- ifelse(df$recency<r[1],3,
-                    ifelse(df$recency>=r[1] & df$recency<r[2],2,1))
+    df$Re <- ifelse(df$recency<r[1],1,
+                    ifelse(df$recency>=r[1] & df$recency<r[2],2,3))
 
   } else if (n_rec == 4){
 
-    df$Re <- ifelse(df$recency<r[1],4,
-                    ifelse(df$recency>=r[1] & df$recency<r[2],3,
-                           ifelse(df$recency>=r[2] & df$recency<r[3],2,1)))
+    df$Re <- ifelse(df$recency<r[1],1,
+                    ifelse(df$recency>=r[1] & df$recency<r[2],2,
+                           ifelse(df$recency>=r[2] & df$recency<r[3],3,4)))
   } else if (n_rec == 5){
 
-    df$Re <- ifelse(df$recency<r[1],5,
-                    ifelse(df$recency>=r[1] & df$recency<r[2],4,
+    df$Re <- ifelse(df$recency<r[1],1,
+                    ifelse(df$recency>=r[1] & df$recency<r[2],2,
                            ifelse(df$recency>=r[2] & df$recency<r[3],3,
-                                  ifelse(df$recency>=r[3] & df$recency<r[4],2,1))))
+                                  ifelse(df$recency>=r[3] & df$recency<r[4],4,5))))
   }
 
 ##Monetary
