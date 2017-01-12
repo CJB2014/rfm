@@ -2,7 +2,7 @@
 % Please edit documentation in R/rfm_model.R
 \name{rfm_model}
 \alias{rfm_model}
-\title{rfm_load fucntion}
+\title{rfm_model fucntion}
 \usage{
 rfm_model(df)
 }
