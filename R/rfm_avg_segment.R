@@ -19,7 +19,7 @@ rfm_avg_segment <- function(model){
 
   model <- as.data.table(model)
 
-  avg_score <- hf[, .(.N, rec = mean(recency), freq = mean(frequency),mon = mean(monetary)), by= (score)]
+  avg_score <- model[, .(.N, rec = mean(recency), freq = mean(frequency),mon = mean(monetary)), by= (score)]
 
   return(avg_score)
 
